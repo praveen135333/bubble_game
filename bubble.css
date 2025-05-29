@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+:root{
+    --x: rgb(128, 205, 160);
+    --y: rgb(54, 101, 74);
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--x);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--y) 0px 10px 15px 0.5px inset;
+    overflow: hidden;
+}
+.ptop{
+    width: 100%;
+    height: 100px;
+    background-color: var(--y);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.ptop .scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.ptop div h2{
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+.score{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#start{
+    width: 300px;
+    height: 300px;
+    background-color: var(--y);
+    position: absolute;
+    left: calc(50% - 150px);
+    top: calc(50% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+.btn{
+    color: red;   
+    font-weight: 550;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    background-color: var(--x);
+    box-shadow: rgb(82, 146, 91) 0px 2px 15px 0.5px;
+}
+.pbottom{
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.bubble{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: var(--y);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
